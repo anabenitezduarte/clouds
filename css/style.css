@@ -1,0 +1,124 @@
+/* Enter your Styles below! */
+li {
+    list-style-type: none;
+}
+
+body {
+	font-family: interstate, sans-serif;
+	font-size: 16px;
+	 }
+
+h2, h3, h4 {
+	font-family: interstate, sans-serif;
+  color: #50A8FF;
+}
+
+
+h1 {
+	font-size: 90px;
+	font-weight: 800;
+	font-style: normal;
+	text-transform: capitalize;
+	letter-spacing: 3px;
+	color: #50A8FF;
+
+}
+
+h1:hover { color: #94EBDC; }
+
+h2, h3, h4{
+  font-size: 60px;
+}
+
+p1{
+	font-family: interstate, sans-serif;
+	font-size: 20px;
+	font-weight:500;
+  font-style: italic;
+  color: #50A8FF;
+}
+
+nav{
+	font-family: interstate, sans-serif;
+	font-size: 40px;
+	text-transform: capitalize;
+	line-height:60px;
+	font-weight:500;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 24px;
+}
+
+blockquote {
+	margin: 20px 60px;
+	font-family: Helvetica, sans-serif;
+}
+
+header {margin-bottom: 20px;}
+
+/* ensures that your images stretch the width of their containers */
+img { width: 100%; }
+
+a {
+	color: #50A8FF;
+	text-decoration: none;
+	 }
+a:hover { color: #94EBDC; }
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 40px;
+	width: 60%;
+	margin: auto;
+
+}
+
+.grid div {
+	background-color: transparent;
+	postion: absolute;
+	bottom: 20px;
+	width: 50%;
+	grid-area: bottom;
+	padding-top: 55%;
+	padding-left: 80%;
+}
+
+.subpage-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 40px;
+	width: 60%;
+	margin: auto;
+
+}
+
+.subpage-grid div {
+	background-color: transparent;
+	postion: absolute;
+	bottom: 20px;
+	width: 50%;
+	grid-area: bottom;
+	padding-top: 55%;
+	padding-left: 80%;
+}
+
+footer{
+	color: #94EBDC;
+}
+
+@media only screen and (min-width:768px) {
+
+}
+
+@media only screen and (min-width:1224px) {
+
+}
