@@ -6,29 +6,35 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<img src="images/cirrus.jpg"
-	style="height:768px"
+	<link rel="stylesheet" href="js/script.js">
+	<img src="images/cirrus.jpeg"
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 	alt="cirrus wispy clouds against deep blue sky">
 </head>
 
 <style>
+
+.parallax-window {
+min-height: 400px;
+background: transparent;
+}
+
 header{
   position: fixed;
   padding: 30px;
 }
 
 nav{
-  position: absolute;
+  position: fixed;
   padding-left: 20px;
   bottom: 20px;
   width: 50%;
 }
 
 footer{
-  position: absolute;
+  position: fixed;
   bottom: 10px;
   padding-left: 50%;
   text-align: center;
@@ -37,7 +43,7 @@ footer{
 </style>
 
 <body>
-	<!-- These semantic tags were added to help you get started but you are very welcome to delete any of them and do your own thing -->
+			<div class="parallax-window" data-parallax="scroll">
 	<header>
 		<!-- header, h1, logo etc content -->
 		<li><a href="clouds.html"><h1>CLOUDS</h1></a>
@@ -51,9 +57,13 @@ footer{
 			<li><a href="subpage-four.html">STRATUS</a></li>
 		</ul>
 	</nav>
+			</div>
 	<main>
-	<!-- Main content here -->
-	<div class="subpage-grid">
+
+		</div>
+
+		<div style="height:800px;">
+
 	<p2>Cirrus clouds are the thin, wispy clouds seen high in the sky.
 	They look as if someone took a cloud, stretched it, pulling pieces off,
 	like a cotton ball when it is pulled apart. They are thin because they are made
@@ -90,7 +100,9 @@ A milky veil of fog (or thin Stratus) is distinguished from a veil of Cirrostrat
 of a similar appearance by the halo phenomena which the sun or the moon nearly always
 produces in a layer of Cirrostratus.
 </p3>
+</div>
 	</main>
+
 	<div class="grid">
 		<div>Column 1</div>
 		<div>Column 2</div>
@@ -99,12 +111,24 @@ produces in a layer of Cirrostratus.
 	<footer>
 &copy; Ana Benitez Duarte
 	</footer>
-	<!-- link for jquery -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/parallax.js"></script>
+<script>
+	$('.parallax-window').parallax({imageSrc: 'images/cirrus.jpeg'});
+
+</script>
 	<script
   	src="https://code.jquery.com/jquery-3.4.1.min.js"
   	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  	crossorigin="anonymous"></script>
+  	crossorigin="anonymous"> </script>
   	<!-- link for your script file -->
   	<script src="js/script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/jquery.smoothscroll.min.js"></script>
+		<script src="js/jquery.enllax.min.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery.interactive_3d.js"></script>
+		<script src="js/scripts.js"></script>
 </body>
 </html>

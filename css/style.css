@@ -115,6 +115,11 @@ footer{
 	color: #94EBDC;
 }
 
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+  }
+
 @media only screen and (min-width:768px) {
 
 }
