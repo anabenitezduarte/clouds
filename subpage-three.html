@@ -1,49 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Nimbus</title>
-  <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Nimbus</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="js/script.js">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all"
+	alt="moody nimbus clouds over mountains and a blue lake">
 </head>
-<body>
 
+<style>
+
+
+header{
+  position: fixed;
+  padding: 30px;
+}
+
+nav{
+  position: fixed;
+  padding-left: 20px;
+  bottom: 20px;
+  width: 50%;
+}
+
+footer{
+  position: relative;
+  bottom: 10px;
+  text-align: center;
+}
+
+</style>
+
+<body class="nimbus">
+    <div class="parallax-window" data-parallax="scroll">
   <header>
-  <li><a href="clouds.html"><h1>CLOUDS</h1></a>
-    <h2>Nimbus</h2>
+
+  <a href="clouds.html"><h1>CLOUDS</h1></a>
   </header>
   <nav>
-    <ul>
-      <li><a href="subpage-one.html">Cirrus</a></li>
-      <li><a href="subpage-two.html">Cumulus</a></li>
-      <li><a href="subpage-three.html">Nimbus</a></li>
-      <li><a href="subpage-four.html">Stratus</a></li>
-    </ul>
 
+    <ul>
+      <li><a href="subpage-one.html">CIRRUS</a></li>
+      <li><a href="subpage-two.html">CUMULUS</a></li>
+      <li><a href="subpage-three.html">NIMBUS</a></li>
+      <li><a href="subpage-four.html">STRATUS</a></li>
+    </ul>
   </nav>
+  	</div>
   <main>
-    <p>The word nimbus means a cloud that already has rain or snow falling from it.
+
+	<div class="grid-two">
+    <p class="one">The word nimbus means a cloud that already has rain or snow falling from it.
       These clouds are dark and seen during a thunderstorm along with thunder and lightning.
        They can be a combination of two clouds, like a cumulonimbus, which means a puffy black
        cloud with rain falling out or it, or a stratonimbus, which is a dark blanket with rain
         falling out of it.
       </p>
 <h3>Nimbostratus</h3>
-<p>
+<p class="two">
   Altostratus often spread over thousands of square miles and are strongly linked to light rain or snow.
   Though they’re not capable of yielding heavy rain it’s common for altostratus clouds to morph into
   nimbostratus clouds which are packed with moisture and can deliver a pounding.
 They’re uniformly gray, smooth, and mostly featureless which is why they’re sometimes called ‘boring
 clouds’. You’ll commonly see this types of clouds in an advancing warm frontal system, preceding nimbostratus clouds.
 </p>
+
 <h4>Cumulonimbus</h4>
-<p>
+<p class="three">
   The thunderstorm cloud, this is a heavy and dense cloud in the form of a mountain or huge tower.
    The upper portion is usually smoothed, fibrous or striated and nearly always flattened in the shape
     of an anvil or vast plume.
@@ -51,19 +79,25 @@ clouds’. You’ll commonly see this types of clouds in an advancing warm front
 Under the base of this cloud which is often very dark, there are often low ragged clouds that may or may
 not merge with the base. They produce precipitation, which sometimes is in the form of virga.
 </p>
+</div>
   </main>
-  <div class="grid">
-    <div>Column 1</div>
-    <div>Column 2</div>
-  </div>
-  <footer>
-    <script
-    	src="https://code.jquery.com/jquery-3.4.1.min.js"
-    	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    	crossorigin="anonymous"></script>
-    	<!-- link for your script file -->
-    	<script src="js/script.js"></script>
-  </footer>
 
+  <footer>
+&copy; Ana Benitez Duarte
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/parallax.js"></script>
+<script>
+  $('.parallax-window').parallax({imageSrc: 'images/nimbus.jpeg'});
+
+</script>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"> </script>
+    <!-- link for your script file -->
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.smoothscroll.min.js"></script>
 </body>
 </html>

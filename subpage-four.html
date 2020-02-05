@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Stratus</title>
-  <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Stratus</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="js/script.js">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all"
+	alt="extrodinary puffy stratocumulus clouds high up in the sky">
 </head>
-<body>
 
+<style>
+
+
+header{
+  position: fixed;
+  padding: 30px;
+}
+
+nav{
+  position: fixed;
+  padding-left: 20px;
+  bottom: 20px;
+  width: 50%;
+}
+
+footer{
+  position: relative;
+  bottom: 10px;
+  text-align: center;
+}
+
+</style>
+
+<body class="stratus">
+  	<div class="parallax-window" data-parallax="scroll">
   <header>
 
-    <li><a href="clouds.html"><h1>CLOUDS</h1></a>
-    <h2>Stratus</h2>
+<a href="clouds.html"><h1>CLOUDS</h1></a>
   </header>
   <nav>
     <!-- Global naviagtion stuff here, but move this or delete this to your liking. Same goes for the rest -->
     <ul>
-      <li><a href="subpage-one.html">Cirrus</a></li>
-      <li><a href="subpage-two.html">Cumulus</a></li>
-      <li><a href="subpage-three.html">Nimbus</a></li>
-      <li><a href="subpage-four.html">Stratus</a></li>
+      <li><a href="subpage-one.html">CIRRUS</a></li>
+      <li><a href="subpage-two.html">CUMULUS</a></li>
+      <li><a href="subpage-three.html">NIMBUS</a></li>
+      <li><a href="subpage-four.html">STRATUS</a></li>
     </ul>
   </nav>
+  	</div>
   <main>
-<p>
+
+<div class="grid-two">
+<p class="one">
   Stratus clouds are composed of thin layers of clouds covering a large area of the sky.
   This is simply mist or fog when it forms close to the ground. You can easily distinguish a
   stratus cloud by the long horizontal layers of cloud which have a fog-like appearance.
 </p>
 <h3>Stratus</h3>
-<p>
+<p class="two">
   The clouds form from large air masses that rise to the atmosphere and later condense. These are
   pretty benign in terms of rainfall producing light showers or even light snow if the temperatures
   fall below freezing. However, if enough moisture is retained at the ground level, the cloud can
@@ -43,7 +69,7 @@
   in the coastal and mountainous regions.
 </p>
 <h4>Stratocumulus</h4>
-<p>
+<p class="three">
 Stratocumulus looks like a thick white blanket of stretched out cotton.
 They resemble cumulus clouds except they’re far bigger. The base is well-defined and flat but
 the upper part of the cloud is ragged due to convection with the cloud itself.  Depending on the
@@ -52,27 +78,35 @@ People often think rain is imminent when they see these clouds. In reality, you�
 a light drizzle out of them.
 </p>
 <h5>Altostratus</h5>
-<p>
+<p class="four">
   Altostratus clouds are “strato” type clouds (see below) that possess a flat and uniform type
   texture in the mid levels. They frequently indicate the approach of a warm front and may thicken
   and lower into stratus, then nimbostratus resulting in rain or snow. However, altostratus clouds
   themselves do not produce significant precipitation at the surface, although sprinkles or occasionally
   light showers may occur from a thick alto- stratus deck.
 </p>
+</div>
   </main>
-  <div class="grid">
-    <div>Column 1</div>
-    <div>Column 2</div>
-  </div>
-  <footer>
 
+  <footer>
+&copy; Ana Benitez Duarte
   </footer>
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-    <!-- link for your script file -->
-    <script src="js/script.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/parallax.js"></script>
+
+<script>
+	$('.parallax-window').parallax({imageSrc: 'images/stratocumulus.jpeg'});
+</script>
+
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous"> </script>
+  	<!-- link for your script file -->
+  	<script src="js/script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/jquery.smoothscroll.min.js"></script>
 
 </body>
 </html>
